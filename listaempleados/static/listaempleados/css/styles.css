@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #343a40;
+    padding: 15px;
+    color: white;
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+}
+.sidebar h4 {
+    color: white;
+}
+.sidebar .nav-link {
+    color: white;
+}
+.sidebar .nav-link:hover {
+    background-color: #495057;
+}
+.content {
+    padding: 20px;
+    flex-grow: 1;
+    margin-top: 56px;
+}
+.content.authenticated {
+    margin-left: 250px; /* Ajusta el margen izquierdo cuando el usuario está autenticado */
+}
+.table-responsive {
+    margin-top: 20px;
+}
+.navbar {
+    background-color: #B0C4DE;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
